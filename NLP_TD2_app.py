@@ -7,6 +7,7 @@ from nltk.tokenize import word_tokenize
 nltk.download('sentiwordnet')
 nltk.download('punkt')
 nltk.download('averaged_perceptron_tagger')
+nltk.download('wordnet')
 
 # Define functions to calculate sentiment scores
 def get_adverbs(text):
