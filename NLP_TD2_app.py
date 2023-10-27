@@ -5,6 +5,9 @@ from nltk.tokenize import word_tokenize
 
 # Load NLTK resources
 nltk.download('sentiwordnet')
+nltk.download('punkt')
+nltk.download('averaged_perceptron_tagger')
+nltk.download('wordnet')
 
 # Define functions to calculate sentiment scores
 def get_adverbs(text):
@@ -22,7 +25,7 @@ def calculate_sentiment_score(adverbs):
     return sentiment_score
 
 # Streamlit UI
-st.title("Movie Review Sentiment Analysis")
+st.title("Janany's Movie Review Sentiment Analysis")
 
 # User input
 review = st.text_area("Enter your movie review:")
